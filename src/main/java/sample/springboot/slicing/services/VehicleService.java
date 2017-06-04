@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 import sample.springboot.slicing.model.Vehicle;
 import sample.springboot.slicing.repository.VehicleRepository;
 
+import java.util.List;
+
 /**
  * Created by imran on 6/4/17.
  */
@@ -21,4 +23,11 @@ public class VehicleService {
     public Vehicle getVehicle(Integer id){
          return repository.getOne(id);
     }
+
+    public List<Vehicle> findAll(){
+         return repository.findAll();
+    }
+
 }
+
+

@@ -13,11 +13,19 @@ public class Vehicle {
     @GeneratedValue
     private Integer id;
 
-    @Column(name = "type")
-    private String type;
+    @Column(name = "make")
+    private String make;
 
-    @Column(name="year")
-    private Integer year;
+    @Column(name = "model")
+    private String model;
+
+
+    public Vehicle(){}
+
+    public Vehicle(String make,String model){
+        this.make=make;
+        this.model=model;
+    }
 
     public Integer getId() {
         return id;
@@ -27,19 +35,19 @@ public class Vehicle {
         this.id = id;
     }
 
-    public String getType() {
-        return type;
+    public String getMake() {
+        return make;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setMake(String make) {
+        this.make = make;
     }
 
-    public Integer getYear() {
-        return year;
+    public String getModel() {
+        return model;
     }
 
-    public void setYear(Integer year) {
-        this.year = year;
+    public void setModel(String model) {
+        this.model = model;
     }
 }

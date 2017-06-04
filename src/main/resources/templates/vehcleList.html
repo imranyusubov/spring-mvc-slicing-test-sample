@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+     <h1>Welcome to our funny app</h1>
+     <table>
+         <th:block th:each="vehicle : ${vehicles}">
+             <tr>
+                 <td th:text="${vehicle.id}">ID</td>
+                 <td th:text="${vehicle.make}">Make</td>
+                 <td th:text="${vehicle.model}">Model</td>
+             </tr>
+          </th:block>
+     </table>
+</body>
+</html>
