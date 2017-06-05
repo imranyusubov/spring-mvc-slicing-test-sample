@@ -33,11 +33,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringRunner.class)
 @WebMvcTest(controllers = {VehicleController.class} ,secure = false)
 public class VehicleControllerTest {
+
     @Autowired
     private MockMvc mvc;
-
-   // @MockBean
-    //private VehicleController controller;
 
     @MockBean
     private VehicleService service;

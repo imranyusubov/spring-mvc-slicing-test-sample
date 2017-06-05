@@ -9,4 +9,5 @@ import sample.springboot.slicing.model.Vehicle;
  */
 @Repository
 public interface VehicleRepository extends JpaRepository<Vehicle,Integer> {
+    public Vehicle findByModel(String model);
 }
